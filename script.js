@@ -9,6 +9,8 @@ var stringy = (_amount) =>{
     return string;
 }
 
+
+
 const cont = document.createElement('div');
 cont.className = 'container';
 document.body.appendChild(cont);
@@ -33,6 +35,14 @@ document.querySelectorAll('.el').forEach(item =>
     })
     
 })
+
+
+
+const refreshPage = () => {
+    document.getElementsByClassName('.el').forEach(item => {
+        item.backgroundColor = 'white';
+    } )
+}
 
 
   
