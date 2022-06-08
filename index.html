@@ -8,7 +8,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <input type="submit" value="odśwież" onclick="refreshPage()">
+    <input type="submit" value="wyczyść" onclick="refreshPage()" class="hidden clean">
+    <input type="submit" value="odświez" onclick="window.location.reload();" class="hidden refresh" role="button">
+    <div class="input">
+        <p>Wybierz wielkość pola do rysowania (px)</p>
+        <input type="number" id="input" min="3" max="128">
+        <input type="submit" value="Pokaż" onclick="show()">
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
